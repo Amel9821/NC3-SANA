@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43068C7628816C9000CCEF1F /* NC3 SANA WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 43068C7528816C9000CCEF1F /* NC3 SANA WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43068C7B28816C9100CCEF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43068C7A28816C9100CCEF1F /* Assets.xcassets */; };
+		43068C8128816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43068C8028816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43068C8628816C9100CCEF1F /* NC3_SANAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8528816C9100CCEF1F /* NC3_SANAApp.swift */; };
+		43068C8828816C9100CCEF1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8728816C9100CCEF1F /* ContentView.swift */; };
+		43068C8A28816C9100CCEF1F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8928816C9100CCEF1F /* NotificationController.swift */; };
+		43068C8C28816C9100CCEF1F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8B28816C9100CCEF1F /* NotificationView.swift */; };
+		43068C8E28816C9100CCEF1F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8D28816C9100CCEF1F /* ComplicationController.swift */; };
+		43068C9028816C9200CCEF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43068C8F28816C9200CCEF1F /* Assets.xcassets */; };
+		43068C9328816C9200CCEF1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43068C9228816C9200CCEF1F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43068C7728816C9000CCEF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43068C6B28816C9000CCEF1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43068C7428816C9000CCEF1F;
+			remoteInfo = "NC3 SANA WatchKit App";
+		};
+		43068C8228816C9100CCEF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43068C6B28816C9000CCEF1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43068C7F28816C9100CCEF1F;
+			remoteInfo = "NC3 SANA WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43068C9B28816C9200CCEF1F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43068C8128816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43068C9F28816C9200CCEF1F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				43068C7628816C9000CCEF1F /* NC3 SANA WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43068C7128816C9000CCEF1F /* NC3 SANA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC3 SANA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43068C7528816C9000CCEF1F /* NC3 SANA WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC3 SANA WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43068C7A28816C9100CCEF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43068C8028816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NC3 SANA WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43068C8528816C9100CCEF1F /* NC3_SANAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC3_SANAApp.swift; sourceTree = "<group>"; };
+		43068C8728816C9100CCEF1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43068C8928816C9100CCEF1F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		43068C8B28816C9100CCEF1F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		43068C8D28816C9100CCEF1F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		43068C8F28816C9200CCEF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43068C9228816C9200CCEF1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43068C9428816C9200CCEF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43068C9528816C9200CCEF1F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43068C7D28816C9100CCEF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43068C6A28816C9000CCEF1F = {
+			isa = PBXGroup;
+			children = (
+				43068C7928816C9000CCEF1F /* NC3 SANA WatchKit App */,
+				43068C8428816C9100CCEF1F /* NC3 SANA WatchKit Extension */,
+				43068C7228816C9000CCEF1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43068C7228816C9000CCEF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43068C7128816C9000CCEF1F /* NC3 SANA.app */,
+				43068C7528816C9000CCEF1F /* NC3 SANA WatchKit App.app */,
+				43068C8028816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43068C7928816C9000CCEF1F /* NC3 SANA WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				43068C7A28816C9100CCEF1F /* Assets.xcassets */,
+			);
+			path = "NC3 SANA WatchKit App";
+			sourceTree = "<group>";
+		};
+		43068C8428816C9100CCEF1F /* NC3 SANA WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43068C8528816C9100CCEF1F /* NC3_SANAApp.swift */,
+				43068C8728816C9100CCEF1F /* ContentView.swift */,
+				43068C8928816C9100CCEF1F /* NotificationController.swift */,
+				43068C8B28816C9100CCEF1F /* NotificationView.swift */,
+				43068C8D28816C9100CCEF1F /* ComplicationController.swift */,
+				43068C8F28816C9200CCEF1F /* Assets.xcassets */,
+				43068C9428816C9200CCEF1F /* Info.plist */,
+				43068C9528816C9200CCEF1F /* PushNotificationPayload.apns */,
+				43068C9128816C9200CCEF1F /* Preview Content */,
+			);
+			path = "NC3 SANA WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		43068C9128816C9200CCEF1F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43068C9228816C9200CCEF1F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43068C7028816C9000CCEF1F /* NC3 SANA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43068CA028816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA" */;
+			buildPhases = (
+				43068C6F28816C9000CCEF1F /* Resources */,
+				43068C9F28816C9200CCEF1F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43068C7828816C9000CCEF1F /* PBXTargetDependency */,
+			);
+			name = "NC3 SANA";
+			productName = "NC3 SANA";
+			productReference = 43068C7128816C9000CCEF1F /* NC3 SANA.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		43068C7428816C9000CCEF1F /* NC3 SANA WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43068C9C28816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA WatchKit App" */;
+			buildPhases = (
+				43068C7328816C9000CCEF1F /* Resources */,
+				43068C9B28816C9200CCEF1F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43068C8328816C9100CCEF1F /* PBXTargetDependency */,
+			);
+			name = "NC3 SANA WatchKit App";
+			productName = "NC3 SANA WatchKit App";
+			productReference = 43068C7528816C9000CCEF1F /* NC3 SANA WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		43068C7F28816C9100CCEF1F /* NC3 SANA WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43068C9828816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA WatchKit Extension" */;
+			buildPhases = (
+				43068C7C28816C9100CCEF1F /* Sources */,
+				43068C7D28816C9100CCEF1F /* Frameworks */,
+				43068C7E28816C9100CCEF1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NC3 SANA WatchKit Extension";
+			productName = "NC3 SANA WatchKit Extension";
+			productReference = 43068C8028816C9100CCEF1F /* NC3 SANA WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43068C6B28816C9000CCEF1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					43068C7028816C9000CCEF1F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					43068C7428816C9000CCEF1F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					43068C7F28816C9100CCEF1F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 43068C6E28816C9000CCEF1F /* Build configuration list for PBXProject "NC3 SANA" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43068C6A28816C9000CCEF1F;
+			productRefGroup = 43068C7228816C9000CCEF1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43068C7028816C9000CCEF1F /* NC3 SANA */,
+				43068C7428816C9000CCEF1F /* NC3 SANA WatchKit App */,
+				43068C7F28816C9100CCEF1F /* NC3 SANA WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43068C6F28816C9000CCEF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43068C7328816C9000CCEF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43068C7B28816C9100CCEF1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43068C7E28816C9100CCEF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43068C9328816C9200CCEF1F /* Preview Assets.xcassets in Resources */,
+				43068C9028816C9200CCEF1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43068C7C28816C9100CCEF1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43068C8A28816C9100CCEF1F /* NotificationController.swift in Sources */,
+				43068C8828816C9100CCEF1F /* ContentView.swift in Sources */,
+				43068C8E28816C9100CCEF1F /* ComplicationController.swift in Sources */,
+				43068C8628816C9100CCEF1F /* NC3_SANAApp.swift in Sources */,
+				43068C8C28816C9100CCEF1F /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43068C7828816C9000CCEF1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43068C7428816C9000CCEF1F /* NC3 SANA WatchKit App */;
+			targetProxy = 43068C7728816C9000CCEF1F /* PBXContainerItemProxy */;
+		};
+		43068C8328816C9100CCEF1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43068C7F28816C9100CCEF1F /* NC3 SANA WatchKit Extension */;
+			targetProxy = 43068C8228816C9100CCEF1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43068C9628816C9200CCEF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43068C9728816C9200CCEF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43068C9928816C9200CCEF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NC3 SANA WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NC3 SANA WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NC3 SANA WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		43068C9A28816C9200CCEF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NC3 SANA WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NC3 SANA WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "NC3 SANA WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		43068C9D28816C9200CCEF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = NC3_SANA_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "NC3 SANA WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		43068C9E28816C9200CCEF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = NC3_SANA_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "NC3 SANA WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		43068CA128816C9200CCEF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43068CA228816C9200CCEF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C8B3R9N352;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amalia.NC3-SANA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43068C6E28816C9000CCEF1F /* Build configuration list for PBXProject "NC3 SANA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43068C9628816C9200CCEF1F /* Debug */,
+				43068C9728816C9200CCEF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43068C9828816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43068C9928816C9200CCEF1F /* Debug */,
+				43068C9A28816C9200CCEF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43068C9C28816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43068C9D28816C9200CCEF1F /* Debug */,
+				43068C9E28816C9200CCEF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43068CA028816C9200CCEF1F /* Build configuration list for PBXNativeTarget "NC3 SANA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43068CA128816C9200CCEF1F /* Debug */,
+				43068CA228816C9200CCEF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43068C6B28816C9000CCEF1F /* Project object */;
+}

@@ -17,6 +17,25 @@
 		43068C8E28816C9100CCEF1F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43068C8D28816C9100CCEF1F /* ComplicationController.swift */; };
 		43068C9028816C9200CCEF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43068C8F28816C9200CCEF1F /* Assets.xcassets */; };
 		43068C9328816C9200CCEF1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43068C9228816C9200CCEF1F /* Preview Assets.xcassets */; };
+		4329A7FF2883CB1D00B224ED /* ViewModelSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329A7FE2883CB1D00B224ED /* ViewModelSong.swift */; };
+		4329A8092883CD3F00B224ED /* ModelSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329A8082883CD3F00B224ED /* ModelSongs.swift */; };
+		4329A80B2883CDD400B224ED /* AVServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329A80A2883CDD400B224ED /* AVServices.swift */; };
+		4329A8112885332500B224ED /* fantasticbaby.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8102885332500B224ED /* fantasticbaby.m4a */; };
+		4329A8122885332500B224ED /* fantasticbaby.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8102885332500B224ED /* fantasticbaby.m4a */; };
+		4329A8132885332500B224ED /* fantasticbaby.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8102885332500B224ED /* fantasticbaby.m4a */; };
+		4329A8152885337E00B224ED /* Zoomcut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8142885337E00B224ED /* Zoomcut.m4a */; };
+		4329A8162885337E00B224ED /* Zoomcut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8142885337E00B224ED /* Zoomcut.m4a */; };
+		4329A8172885337E00B224ED /* Zoomcut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8142885337E00B224ED /* Zoomcut.m4a */; };
+		4329A8192885338800B224ED /* beatbox.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8182885338800B224ED /* beatbox.m4a */; };
+		4329A81A2885338800B224ED /* beatbox.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8182885338800B224ED /* beatbox.m4a */; };
+		4329A81B2885338800B224ED /* beatbox.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A8182885338800B224ED /* beatbox.m4a */; };
+		4329A826288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
+		4329A827288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
+		4329A828288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
+		43F92A7D2882917D0020D3EB /* ChooseSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A7C2882917D0020D3EB /* ChooseSongView.swift */; };
+		43F92A7F288291900020D3EB /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A7E288291900020D3EB /* ControlView.swift */; };
+		43F92A812882919E0020D3EB /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A802882919E0020D3EB /* ResultView.swift */; };
+		43F92A83288291B70020D3EB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A82288291B70020D3EB /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +94,17 @@
 		43068C9228816C9200CCEF1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43068C9428816C9200CCEF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43068C9528816C9200CCEF1F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4329A7FE2883CB1D00B224ED /* ViewModelSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSong.swift; sourceTree = "<group>"; };
+		4329A8082883CD3F00B224ED /* ModelSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSongs.swift; sourceTree = "<group>"; };
+		4329A80A2883CDD400B224ED /* AVServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVServices.swift; sourceTree = "<group>"; };
+		4329A8102885332500B224ED /* fantasticbaby.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fantasticbaby.m4a; sourceTree = "<group>"; };
+		4329A8142885337E00B224ED /* Zoomcut.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zoomcut.m4a; sourceTree = "<group>"; };
+		4329A8182885338800B224ED /* beatbox.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatbox.m4a; sourceTree = "<group>"; };
+		4329A825288564C000B224ED /* twice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twice.m4a; sourceTree = "<group>"; };
+		43F92A7C2882917D0020D3EB /* ChooseSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSongView.swift; sourceTree = "<group>"; };
+		43F92A7E288291900020D3EB /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		43F92A802882919E0020D3EB /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		43F92A82288291B70020D3EB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +148,22 @@
 		43068C8428816C9100CCEF1F /* NC3 SANA WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4329A825288564C000B224ED /* twice.m4a */,
+				4329A8182885338800B224ED /* beatbox.m4a */,
+				4329A8142885337E00B224ED /* Zoomcut.m4a */,
+				4329A8102885332500B224ED /* fantasticbaby.m4a */,
+				4329A8072883CD3100B224ED /* Model */,
+				4329A8062883CD2A00B224ED /* View */,
 				43068C8528816C9100CCEF1F /* NC3_SANAApp.swift */,
+				43F92A7C2882917D0020D3EB /* ChooseSongView.swift */,
+				43F92A82288291B70020D3EB /* GameView.swift */,
+				43F92A802882919E0020D3EB /* ResultView.swift */,
+				43F92A7E288291900020D3EB /* ControlView.swift */,
 				43068C8728816C9100CCEF1F /* ContentView.swift */,
 				43068C8928816C9100CCEF1F /* NotificationController.swift */,
 				43068C8B28816C9100CCEF1F /* NotificationView.swift */,
 				43068C8D28816C9100CCEF1F /* ComplicationController.swift */,
+				4329A8052883CBA400B224ED /* ViewModel */,
 				43068C8F28816C9200CCEF1F /* Assets.xcassets */,
 				43068C9428816C9200CCEF1F /* Info.plist */,
 				43068C9528816C9200CCEF1F /* PushNotificationPayload.apns */,
@@ -137,6 +178,30 @@
 				43068C9228816C9200CCEF1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4329A8052883CBA400B224ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4329A7FE2883CB1D00B224ED /* ViewModelSong.swift */,
+				4329A80A2883CDD400B224ED /* AVServices.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4329A8062883CD2A00B224ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4329A8072883CD3100B224ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4329A8082883CD3F00B224ED /* ModelSongs.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4329A8192885338800B224ED /* beatbox.m4a in Resources */,
+				4329A826288564C000B224ED /* twice.m4a in Resources */,
+				4329A8152885337E00B224ED /* Zoomcut.m4a in Resources */,
+				4329A8112885332500B224ED /* fantasticbaby.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4329A81A2885338800B224ED /* beatbox.m4a in Resources */,
+				4329A8162885337E00B224ED /* Zoomcut.m4a in Resources */,
+				4329A827288564C000B224ED /* twice.m4a in Resources */,
+				4329A8122885332500B224ED /* fantasticbaby.m4a in Resources */,
 				43068C7B28816C9100CCEF1F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +327,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4329A81B2885338800B224ED /* beatbox.m4a in Resources */,
+				4329A8172885337E00B224ED /* Zoomcut.m4a in Resources */,
 				43068C9328816C9200CCEF1F /* Preview Assets.xcassets in Resources */,
+				4329A8132885332500B224ED /* fantasticbaby.m4a in Resources */,
 				43068C9028816C9200CCEF1F /* Assets.xcassets in Resources */,
+				4329A828288564C000B224ED /* twice.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4329A8092883CD3F00B224ED /* ModelSongs.swift in Sources */,
+				43F92A7D2882917D0020D3EB /* ChooseSongView.swift in Sources */,
 				43068C8A28816C9100CCEF1F /* NotificationController.swift in Sources */,
 				43068C8828816C9100CCEF1F /* ContentView.swift in Sources */,
 				43068C8E28816C9100CCEF1F /* ComplicationController.swift in Sources */,
+				43F92A83288291B70020D3EB /* GameView.swift in Sources */,
+				4329A7FF2883CB1D00B224ED /* ViewModelSong.swift in Sources */,
 				43068C8628816C9100CCEF1F /* NC3_SANAApp.swift in Sources */,
+				43F92A812882919E0020D3EB /* ResultView.swift in Sources */,
+				43F92A7F288291900020D3EB /* ControlView.swift in Sources */,
+				4329A80B2883CDD400B224ED /* AVServices.swift in Sources */,
 				43068C8C28816C9100CCEF1F /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

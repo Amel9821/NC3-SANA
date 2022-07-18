@@ -12,7 +12,7 @@ struct NC3_SANAApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ChooseSongView()
             }
         }
 

@@ -80,6 +80,8 @@ struct ChooseSongView: View {
             }
             )
         }
+        .foregroundColor(Color("UnguTua"))
+        .listItemTint(Color("Ungu"))
         .listStyle(.carousel)
             }
             }

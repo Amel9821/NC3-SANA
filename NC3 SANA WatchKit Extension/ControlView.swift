@@ -12,7 +12,7 @@ struct ControlView: View {
         HStack {
             VStack {
                 Button {
-                    
+                    AVService.shared.player?.stop()
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -22,7 +22,7 @@ struct ControlView: View {
             }
             VStack {
                 Button {
-                    
+                    AVService.shared.player?.pause()
                 } label: {
                     Image(systemName:  "pause")
                 }

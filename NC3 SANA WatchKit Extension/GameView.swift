@@ -14,6 +14,9 @@ struct Gambar {
 
 struct GameView: View {
     
+//    var tombolDangdut = [upArrow, downArrow, rightArrow, leftArrow]
+//    var dangdutBanget = tombolDangdut.randomElement()!
+    
     var gambar = [
     Gambar(size: 12, judul: "apaya")
     ]
@@ -96,6 +99,7 @@ struct GameView: View {
     }
     
     var upArrow: some View {
+        Button(action: {}){
         ZStack{
             Circle()
                 .fill(Color("Ungu"))
@@ -103,10 +107,12 @@ struct GameView: View {
                 .fill(Color("UnguTua"))
                 .frame(width: 30, height: 30)
         }
+        }.buttonStyle(PlainButtonStyle())
         .frame(width: 62, height: 62)
         .opacity(1)
     }
     var rightArrow: some View {
+        Button(action: {}){
         ZStack{
             Circle()
                 .fill(Color("Ungu"))
@@ -114,11 +120,13 @@ struct GameView: View {
                 .fill(Color("UnguTua"))
                 .frame(width: 30, height: 30)
         }
+        }.buttonStyle(PlainButtonStyle())
         .frame(width: 62, height: 62)
         .opacity(0.3)
         .rotationEffect(.degrees(90))
     }
     var leftArrow: some View {
+        Button(action: {}){
         ZStack{
             Circle()
                 .fill(Color("Ungu"))
@@ -126,11 +134,13 @@ struct GameView: View {
                 .fill(Color("UnguTua"))
                 .frame(width: 30, height: 30)
         }
+        }.buttonStyle(PlainButtonStyle())
         .frame(width: 62, height: 62)
         .opacity(0.3)
         .rotationEffect(.degrees(270))
     }
     var downArrow: some View {
+        Button(action: {}){
         ZStack{
             Circle()
                 .fill(Color("Ungu"))
@@ -138,6 +148,7 @@ struct GameView: View {
                 .fill(Color("UnguTua"))
                 .frame(width: 30, height: 30)
         }
+        }.buttonStyle(PlainButtonStyle())
         .frame(width: 62, height: 62)
         .opacity(0.3)
         .rotationEffect(.degrees(180))

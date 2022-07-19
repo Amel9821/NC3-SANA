@@ -9,13 +9,17 @@ import SwiftUI
 
 struct GameView: View {
     @State private var randomSelected : Int = 0
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    @State private var counter = 0.0
+    @State var showResultView = false
+   
+  // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+   // @State private var counter = 0.0
     
     // setiap 0.3 detik button nyala berubah selama 30 detik => 100 kali random
     
     
     var body: some View {
+        //NavigationView {
+        
         //        ZStack{
         //        VStack {
         //        ZStack{
@@ -97,22 +101,32 @@ struct GameView: View {
                 TriangleButton(rotation: 90, buttonNumber: 4, selectedNumber: randomSelected)
             }
         }
-        .onReceive(timer) { time in
-            //
-            if counter.truncatingRemainder(dividingBy: 0.3) == 0.0 {
-              
-                //randomSelected = generateRandomNumber()
-            }
-            print(counter.truncatingRemainder(dividingBy: 0.3))
-            counter += 0.1
-        }
-        .onAppear {
-//            randomSelected = generateRandomNumber()
-//            Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { timer in
-////                print("Oy oy")
-//                randomSelected = generateRandomNumber()
+//        .onReceive(timer) { time in
+//            //
+//            if counter.truncatingRemainder(dividingBy: 0.3) == 0.0 {
+//
+//                //randomSelected = generateRandomNumber()
 //            }
+//            print(counter.truncatingRemainder(dividingBy: 0.3))
+//            counter += 0.1
+//        }
+        .onAppear {
+            print("appear")
+            randomSelected = generateRandomNumber()
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+//                print("Oy oy")
+                randomSelected = generateRandomNumber()
+            }
+           // NavigationLink(
+            Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
+//                print("Oy oy")
+                showResultView.toggle()
+                
+            }
         }
+        .sheet(isPresented: $showResultView) {
+            ResultView()}
+        
     }
     
     func generateRandomNumber() -> Int {
@@ -179,6 +193,7 @@ struct GameView: View {
 }
 
 struct TriangleButton : View {
+    @State var showGameOver: Bool = false
     var rotation : CGFloat = 0
     var buttonNumber : Int = 0
     var selectedNumber : Int = 0
@@ -199,8 +214,12 @@ struct TriangleButton : View {
                 print("Benar")
             } else {
                 print("Salah")
+                showGameOver.toggle()
+                AVService.shared.player?.stop()
             }
         }
+        .sheet(isPresented: $showGameOver) {
+            GameOver(showGameOver: $showGameOver)}
     }
 }
 
@@ -223,3 +242,4 @@ struct GameView_Previews: PreviewProvider {
         GameView()
     }
 }
+

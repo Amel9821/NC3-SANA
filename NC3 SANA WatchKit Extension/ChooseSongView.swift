@@ -14,7 +14,7 @@ import SwiftUI
 
 struct ChooseSongView: View {
 
-    @State var showGameView: Bool = false
+    @State var showSessionPageView: Bool = false
     @State var isPlaying: Bool = false
     
 //    var playlist = [
@@ -47,41 +47,40 @@ struct ChooseSongView: View {
             VStack(alignment: .leading){
             Text("Choose your song")
         List{
-            NavigationLink(destination: GameView(), isActive: self.$showGameView, label: {
+            NavigationLink(destination: SessionPageView(), isActive: self.$showSessionPageView, label: {
                 Text("Bigbang - Fantastic Baby")
                     .onTapGesture {
-                        self.showGameView = true
+                        self.showSessionPageView = true
                         AVService.shared.playMusic1()
                     }
             }
             )
-            NavigationLink(destination: GameView(), isActive: self.$showGameView, label: {
+            NavigationLink(destination: SessionPageView(), isActive: self.$showSessionPageView, label: {
                 Text("Jesse - Zoom")
                     .onTapGesture {
-                        self.showGameView = true
+                        self.showSessionPageView = true
                         AVService.shared.playMusic2()
                     }
             }
             )
-            NavigationLink(destination: GameView(), isActive: self.$showGameView, label: {
+            NavigationLink(destination: SessionPageView(), isActive: self.$showSessionPageView, label: {
                 Text("NCT - Beatbox")
                     .onTapGesture {
-                        self.showGameView = true
+                        self.showSessionPageView = true
                         AVService.shared.playMusic3()
                     }
             }
             )
-            NavigationLink(destination: GameView(), isActive: self.$showGameView, label: {
+            NavigationLink(destination: SessionPageView(), isActive: self.$showSessionPageView, label: {
                 Text("Twice - What is Love")
                     .onTapGesture {
-                        self.showGameView = true
+                        self.showSessionPageView = true
                         AVService.shared.playMusic4()
                     }
             }
             )
         }
-        .foregroundColor(Color("UnguTua"))
-        .listItemTint(Color("Ungu"))
+       // .foregroundColor(Color("UnguTua")
         .listStyle(.carousel)
             }
             }

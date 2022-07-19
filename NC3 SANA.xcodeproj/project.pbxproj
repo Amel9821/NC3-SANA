@@ -32,6 +32,8 @@
 		4329A826288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
 		4329A827288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
 		4329A828288564C000B224ED /* twice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4329A825288564C000B224ED /* twice.m4a */; };
+		4329A82C2886696200B224ED /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329A82B2886696200B224ED /* GameOver.swift */; };
+		4329A82E28866A2E00B224ED /* SessionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4329A82D28866A2E00B224ED /* SessionPageView.swift */; };
 		43F92A7D2882917D0020D3EB /* ChooseSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A7C2882917D0020D3EB /* ChooseSongView.swift */; };
 		43F92A7F288291900020D3EB /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A7E288291900020D3EB /* ControlView.swift */; };
 		43F92A812882919E0020D3EB /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F92A802882919E0020D3EB /* ResultView.swift */; };
@@ -101,6 +103,8 @@
 		4329A8142885337E00B224ED /* Zoomcut.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zoomcut.m4a; sourceTree = "<group>"; };
 		4329A8182885338800B224ED /* beatbox.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatbox.m4a; sourceTree = "<group>"; };
 		4329A825288564C000B224ED /* twice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = twice.m4a; sourceTree = "<group>"; };
+		4329A82B2886696200B224ED /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		4329A82D28866A2E00B224ED /* SessionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPageView.swift; sourceTree = "<group>"; };
 		43F92A7C2882917D0020D3EB /* ChooseSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSongView.swift; sourceTree = "<group>"; };
 		43F92A7E288291900020D3EB /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		43F92A802882919E0020D3EB /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -158,7 +162,9 @@
 				43F92A7C2882917D0020D3EB /* ChooseSongView.swift */,
 				43F92A82288291B70020D3EB /* GameView.swift */,
 				43F92A802882919E0020D3EB /* ResultView.swift */,
+				4329A82B2886696200B224ED /* GameOver.swift */,
 				43F92A7E288291900020D3EB /* ControlView.swift */,
+				4329A82D28866A2E00B224ED /* SessionPageView.swift */,
 				43068C8728816C9100CCEF1F /* ContentView.swift */,
 				43068C8928816C9100CCEF1F /* NotificationController.swift */,
 				43068C8B28816C9100CCEF1F /* NotificationView.swift */,
@@ -346,6 +352,8 @@
 				4329A8092883CD3F00B224ED /* ModelSongs.swift in Sources */,
 				43F92A7D2882917D0020D3EB /* ChooseSongView.swift in Sources */,
 				43068C8A28816C9100CCEF1F /* NotificationController.swift in Sources */,
+				4329A82C2886696200B224ED /* GameOver.swift in Sources */,
+				4329A82E28866A2E00B224ED /* SessionPageView.swift in Sources */,
 				43068C8828816C9100CCEF1F /* ContentView.swift in Sources */,
 				43068C8E28816C9100CCEF1F /* ComplicationController.swift in Sources */,
 				43F92A83288291B70020D3EB /* GameView.swift in Sources */,

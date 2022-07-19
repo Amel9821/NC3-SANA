@@ -8,7 +8,65 @@
 import SwiftUI
 
 struct GameView: View {
+    
+    
     var body: some View {
+        //        ZStack{
+        //        VStack {
+        //        ZStack{
+        //                    Circle()
+        //                        .fill(Color("Ungu"))
+        //                    Triangle()
+        //                        .fill(Color("UnguTua"))
+        //                        .frame(width: 30, height: 30)
+        //                }
+        //                .frame(width: 62, height: 62)
+        //                .opacity(1)
+        //        Spacer()
+        //        ZStack{
+        //                    Circle()
+        //                        .fill(Color("Ungu"))
+        //                    Triangle()
+        //                        .fill(Color("UnguTua"))
+        //                        .frame(width: 30, height: 30)
+        //                }
+        //                .frame(width: 62, height: 62)
+        //                .opacity(0.3)
+        //                .rotationEffect(.degrees(180))
+        //    }
+        //        HStack {
+        //            ZStack{
+        //                        Circle()
+        //                            .fill(Color("Ungu"))
+        //                        Triangle()
+        //                            .fill(Color("UnguTua"))
+        //                            .frame(width: 30, height: 30)
+        //                    }
+        //                    .frame(width: 62, height: 62)
+        //                    .opacity(0.3)
+        //                    .rotationEffect(.degrees(270))
+        //            Spacer()
+        //            ZStack{
+        //                        Circle()
+        //                            .fill(Color("Ungu"))
+        //                        Triangle()
+        //                            .fill(Color("UnguTua"))
+        //                            .frame(width: 30, height: 30)
+        //                    }
+        //                    .frame(width: 62, height: 62)
+        //                    .opacity(0.3)
+        //                    .rotationEffect(.degrees(90))
+        //
+        //
+        //        }
+        //    }
+        
+        
+        
+        
+        
+        
+        
         ZStack {
             VStack {
                 upArrow
@@ -32,7 +90,7 @@ struct GameView: View {
                 .frame(width: 30, height: 30)
         }
         .frame(width: 62, height: 62)
-       // .opacity(0.3)
+        .opacity(1)
     }
     var rightArrow: some View {
         ZStack{
@@ -73,6 +131,7 @@ struct GameView: View {
     
     
 }
+
 
 struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {

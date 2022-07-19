@@ -1,28 +1,28 @@
 //
-//  ResultView.swift
+//  GameOver.swift
 //  NC3 SANA WatchKit Extension
 //
-//  Created by Amalia . on 16/07/22.
+//  Created by Amalia . on 19/07/22.
 //
 
 import SwiftUI
 
-struct ResultView: View {
+struct GameOver: View {
     var body: some View {
         NavigationView{
         VStack{
-            Image("Happy")
+            Image("Sad")
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
-            Text("게임셋")
-            Text("Congratulation")
+            Text("축하해요")
+            Text("Game Over")
         }
         }.navigationTitle("Result")
     }
 }
 
-struct ResultView_Previews: PreviewProvider {
+struct GameOver_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        GameOver()
     }
 }

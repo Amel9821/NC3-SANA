@@ -17,7 +17,7 @@ struct ResultView: View {
             Text("게임셋")
             Text("Congratulation")
         }
-        }.navigationTitle("Result")
+        }//.navigationTitle("Result")
     }
 }
 

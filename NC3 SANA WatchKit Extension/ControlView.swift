@@ -7,12 +7,17 @@
 
 import SwiftUI
 
+
 struct ControlView: View {
+    @State var showGameOver: Bool = false
+    @State var isPlaying: Bool = true
     var body: some View {
+        NavigationView{
         HStack {
             VStack {
                 Button {
-                    
+                    AVService.shared.player?.stop()
+                    showGameOver.toggle()
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -22,15 +27,24 @@ struct ControlView: View {
             }
             VStack {
                 Button {
-                    
+                    isPlaying.toggle()
+                    if isPlaying {
+                        AVService.shared.player?.play()
+                    } else {
+                        AVService.shared.player?.pause()
+                    }
                 } label: {
-                    Image(systemName:  "pause")
+                    Image(systemName: isPlaying ? "pause" : "play")
                 }
                 .tint(Color.yellow)
                 .font(.title2)
-                Text( "Pause")
+                Text( isPlaying ? "Pause" : "Resume")
             }
+        }}.sheet(isPresented: $showGameOver) {
+            GameOver(showGameOver: $showGameOver)
+            
         }
+        
     }
 }
 

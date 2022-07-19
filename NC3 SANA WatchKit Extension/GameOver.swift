@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameOver: View {
+    @Binding var showGameOver: Bool
     var body: some View {
         NavigationView{
         VStack{
@@ -23,6 +24,6 @@ struct GameOver: View {
 
 struct GameOver_Previews: PreviewProvider {
     static var previews: some View {
-        GameOver()
+        GameOver(showGameOver: .constant(true))
     }
 }

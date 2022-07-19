@@ -7,8 +7,16 @@
 
 import SwiftUI
 
+struct Gambar {
+    var size: Int
+    var judul: String = ""
+}
+
 struct GameView: View {
     
+    var gambar = [
+    Gambar(size: 12, judul: "apaya")
+    ]
     
     var body: some View {
         //        ZStack{
@@ -64,7 +72,8 @@ struct GameView: View {
         
         
         
-        
+        //1. Fungsi yang di eksekusi/jalankan setiap interval waktu tertentu
+        //2. Random visual effect (scale button)
         
         
         ZStack {
@@ -77,6 +86,11 @@ struct GameView: View {
                 leftArrow
                 Spacer()
                 rightArrow
+            }
+        }
+        .onAppear {
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                print("Oy oy")
             }
         }
     }

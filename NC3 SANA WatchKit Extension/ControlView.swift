@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ControlView: View {
-    @State var backToRoot = false
+    @Binding var backToRoot: Bool
     @State var showGameOver: Bool = false
     @State var isPlaying: Bool = true
     var body: some View {
@@ -49,8 +49,8 @@ struct ControlView: View {
     }
 }
 
-struct ControlView_Previews: PreviewProvider {
-    static var previews: some View {
-        ControlView()
-    }
-}
+//struct ControlView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ControlView()
+//    }
+//}

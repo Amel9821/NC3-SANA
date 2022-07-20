@@ -18,14 +18,15 @@ struct GameOver: View {
                 .frame(width: 100, height: 100, alignment: .center)
             Text("축하해요")
             Text("Game Over")
+                .onAppear{
+                    Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                        backToRoot = false
+                        
+                        
+                    }
+                }
         }
-        .onAppear{
-            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
-                backToRoot = false
-                
-                
-            }
-        }
+        
 //        }.fullScreenCover(isPresented: $showChooseSongView) {
 //            ChooseSongView()}
         

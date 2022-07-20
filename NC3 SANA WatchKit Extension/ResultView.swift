@@ -15,35 +15,38 @@ struct ResultView: View {
     var body: some View {
         NavigationView{
             VStack{
-            Image("Happy")
-                .resizable()
-                .frame(width: 100, height: 100, alignment: .center)
-            Text("게임셋")
-            Text("Congratulation")
-                    .onAppear {
-            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                Image("Happy")
+                    .resizable()
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .onTapGesture {
+                        backToRoot = false
+                    }
+                Text("게임셋")
+                Text("Congratulation")
+                //                    .onAppear {
+                //            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                //                    print("oyy")
+                //                    backToRoot = false
+                //
+                //                }
+                //                    }
+            }
+            .onAppear{
+                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
                     print("oyy")
                     backToRoot = false
                     
                 }
-                    }
-        }
-//            .onAppear{
-//                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
-//                    print("oyy")
-//                    backToRoot = false
-//
-//                }
-//
-//            }
-//            .fullScreenCover(isPresented: $showChooseSongView) {
-//                ChooseSongView()}
+                
+            }
+            //            .fullScreenCover(isPresented: $showChooseSongView) {
+            //                ChooseSongView()}
         }.navigationBarBackButtonHidden(true)
     }
 }
 
-struct ResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultView(backToRoot: .constant(false))
-    }
-}
+//struct ResultView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ResultView(backToRoot: .constant(false))
+//    }
+//}

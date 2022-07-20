@@ -11,7 +11,7 @@ struct GameView: View {
     @Binding var backToRoot : Bool
     @State private var randomSelected : Int = 0
     @State var showResultView = false
-   // @State var latestRandomNumber: Int = 0
+    // @State var latestRandomNumber: Int = 0
     
     // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     // @State private var counter = 0.0
@@ -94,7 +94,7 @@ struct TriangleButton : View {
         ZStack{
             Circle()
                 .fill(Color("Ungu"))
-            Triangle()
+            Triangle(backToRoot: $backToRoot)
                 .fill(Color("UnguTua"))
                 .frame(width: 30, height: 30)
         }
@@ -117,6 +117,7 @@ struct TriangleButton : View {
 
 
 struct Triangle: Shape {
+    @Binding var backToRoot: Bool
     func path(in rect: CGRect) -> Path {
         var path = Path()
         

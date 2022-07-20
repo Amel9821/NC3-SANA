@@ -19,7 +19,7 @@ struct ChooseSongView: View {
         VStack(alignment: .leading){
             Text("Choose your song")
             List{
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     Text("Bigbang - Fantastic Baby")
                         .onTapGesture {
                             self.showSessionPageView = true
@@ -27,7 +27,7 @@ struct ChooseSongView: View {
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     Text("Jesse - Zoom")
                         .onTapGesture {
                             self.showSessionPageView = true
@@ -35,7 +35,7 @@ struct ChooseSongView: View {
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     Text("NCT - Beatbox")
                         .onTapGesture {
                             self.showSessionPageView = true
@@ -43,7 +43,7 @@ struct ChooseSongView: View {
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     Text("Twice - What is Love")
                         .onTapGesture {
                             self.showSessionPageView = true

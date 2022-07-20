@@ -14,37 +14,37 @@ struct ControlView: View {
     @State var isPlaying: Bool = true
     var body: some View {
         NavigationView{
-        HStack {
-            VStack {
-                Button {
-                    AVService.shared.player?.stop()
-                    showGameOver.toggle()
-                } label: {
-                    Image(systemName: "xmark")
-                }
-                .tint(Color.red)
-                .font(.title2)
-                Text("End")
-            }
-            VStack {
-                Button {
-                    isPlaying.toggle()
-                    if isPlaying {
-                        AVService.shared.player?.play()
-                    } else {
-                        AVService.shared.player?.pause()
+            HStack {
+                VStack {
+                    Button {
+                        AVService.shared.player?.stop()
+                        showGameOver.toggle()
+                    } label: {
+                        Image(systemName: "xmark")
                     }
-                } label: {
-                    Image(systemName: isPlaying ? "pause" : "play")
+                    .tint(Color.red)
+                    .font(.title2)
+                    Text("End")
                 }
-                .tint(Color.yellow)
-                .font(.title2)
-                Text( isPlaying ? "Pause" : "Resume")
+                VStack {
+                    Button {
+                        isPlaying.toggle()
+                        if isPlaying {
+                            AVService.shared.player?.play()
+                        } else {
+                            AVService.shared.player?.pause()
+                        }
+                    } label: {
+                        Image(systemName: isPlaying ? "pause" : "play")
+                    }
+                    .tint(Color.yellow)
+                    .font(.title2)
+                    Text( isPlaying ? "Pause" : "Resume")
+                }
+            }}.sheet(isPresented: $showGameOver) {
+                GameOver(backToRoot: $backToRoot)
+                
             }
-        }}.sheet(isPresented: $showGameOver) {
-            GameOver(backToRoot: $backToRoot)
-            
-        }
         
     }
 }

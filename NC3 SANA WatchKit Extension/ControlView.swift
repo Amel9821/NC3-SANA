@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct ControlView: View {
+    @State var backToRoot = false
     @State var showGameOver: Bool = false
     @State var isPlaying: Bool = true
     var body: some View {
@@ -41,7 +42,7 @@ struct ControlView: View {
                 Text( isPlaying ? "Pause" : "Resume")
             }
         }}.sheet(isPresented: $showGameOver) {
-            GameOver()
+            GameOver(backToRoot: $backToRoot)
             
         }
         

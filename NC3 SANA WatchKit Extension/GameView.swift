@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
+    @State var backToRoot : Bool = false
     @State private var randomSelected : Int = 0
     @State var showResultView = false
     
@@ -69,7 +70,7 @@ struct GameView: View {
         }
         
         .sheet(isPresented: $showResultView) {
-            ResultView()}
+            ResultView(backToRoot: $backToRoot)}
         
         
     }
@@ -82,6 +83,7 @@ struct GameView: View {
 }
 
 struct TriangleButton : View {
+    @State var backToRoot = false
     @State var showGameOver: Bool = false
     var rotation : CGFloat = 0
     var buttonNumber : Int = 0
@@ -108,7 +110,7 @@ struct TriangleButton : View {
             }
         }
         .sheet(isPresented: $showGameOver) {
-            GameOver()}
+            GameOver(backToRoot: $backToRoot )}
     }
 }
 

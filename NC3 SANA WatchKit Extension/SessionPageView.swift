@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SessionPageView: View {
+    @State var backToRoot = false
     @State private var selection: Tab = .games
     
     enum Tab {
@@ -16,7 +17,7 @@ struct SessionPageView: View {
     var body: some View {
         TabView(selection: $selection) {
             ControlView().tag(Tab.controls)
-            GameView().tag(Tab.games)
+            GameView(backToRoot: backToRoot).tag(Tab.games)
         }
         .tabViewStyle(.page)
     }

@@ -20,14 +20,22 @@ struct ResultView: View {
                 .frame(width: 100, height: 100, alignment: .center)
             Text("게임셋")
             Text("Congratulation")
-        }
-            .onAppear{
-                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                    .onAppear {
+            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                    print("oyy")
                     backToRoot = false
                     
                 }
-                
-            }
+                    }
+        }
+//            .onAppear{
+//                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+//                    print("oyy")
+//                    backToRoot = false
+//
+//                }
+//
+//            }
 //            .fullScreenCover(isPresented: $showChooseSongView) {
 //                ChooseSongView()}
         }.navigationBarBackButtonHidden(true)

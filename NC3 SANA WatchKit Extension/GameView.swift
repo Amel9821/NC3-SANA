@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct GameView: View {
-    @State var backToRoot : Bool = false
+    @Binding var backToRoot : Bool
     @State private var randomSelected : Int = 0
     @State var showResultView = false
+   // @State var latestRandomNumber: Int = 0
     
     // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     // @State private var counter = 0.0
@@ -26,7 +27,7 @@ struct GameView: View {
         ZStack {
             VStack {
                 //                upArrow
-                TriangleButton(rotation: 0, buttonNumber: 1, selectedNumber: randomSelected)
+                TriangleButton(backToRoot: $backToRoot, rotation: 0, buttonNumber: 1, selectedNumber: randomSelected)
                 //                    .onTapGesture {
                 //                        if randomSelected == 1 {
                 //                            print("BENAAAR")
@@ -38,14 +39,14 @@ struct GameView: View {
                 //                    }
                 Spacer()
                 //                downArrow
-                TriangleButton(rotation: 180, buttonNumber: 2, selectedNumber: randomSelected)
+                TriangleButton(backToRoot: $backToRoot, rotation: 180, buttonNumber: 2, selectedNumber: randomSelected)
             }
             HStack {
                 //                leftArrow
-                TriangleButton(rotation: 270, buttonNumber: 3, selectedNumber: randomSelected)
+                TriangleButton(backToRoot: $backToRoot, rotation: 270, buttonNumber: 3, selectedNumber: randomSelected)
                 Spacer()
                 //                rightArrow
-                TriangleButton(rotation: 90, buttonNumber: 4, selectedNumber: randomSelected)
+                TriangleButton(backToRoot: $backToRoot, rotation: 90, buttonNumber: 4, selectedNumber: randomSelected)
             }
         }
         //        .onReceive(timer) { time in
@@ -60,7 +61,7 @@ struct GameView: View {
         .onAppear {
             print("appear")
             randomSelected = generateRandomNumber()
-            Timer.scheduledTimer(withTimeInterval: 0.9, repeats: true) { timer in
+            Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { timer in
                 randomSelected = generateRandomNumber()
             }
             Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
@@ -83,7 +84,7 @@ struct GameView: View {
 }
 
 struct TriangleButton : View {
-    @State var backToRoot = false
+    @Binding var backToRoot : Bool
     @State var showGameOver: Bool = false
     var rotation : CGFloat = 0
     var buttonNumber : Int = 0
@@ -130,9 +131,9 @@ struct Triangle: Shape {
     }
 }
 
-struct GameView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
-    }
-}
+//struct GameView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GameView(backToRoot: .constant(false))
+//    }
+//}
 

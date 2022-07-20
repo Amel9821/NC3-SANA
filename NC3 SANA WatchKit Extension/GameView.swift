@@ -104,8 +104,10 @@ struct TriangleButton : View {
         .onTapGesture {
             if buttonNumber == selectedNumber {
                 print("Benar")
+                WKInterfaceDevice.current().play(.success)
             } else {
                 print("Salah")
+                WKInterfaceDevice.current().play(.failure)
                 showGameOver.toggle()
                 AVService.shared.player?.stop()
             }

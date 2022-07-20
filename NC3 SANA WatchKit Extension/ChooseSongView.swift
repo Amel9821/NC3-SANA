@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChooseSongView: View {
     
+    @State var backToRoot = false
     @State var showSessionPageView: Bool = false
     @State var isPlaying: Bool = false
     

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameOver: View {
+    @Binding var backToRoot : Bool
     @State var showChooseSongView: Bool = false
     var body: some View {
         NavigationView{
@@ -20,12 +21,13 @@ struct GameOver: View {
         }
         .onAppear{
             Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
-                showChooseSongView.toggle()
+                backToRoot = false
+                
                 
             }
-            
-        }.fullScreenCover(isPresented: $showChooseSongView) {
-            ChooseSongView()}
+        }
+//        }.fullScreenCover(isPresented: $showChooseSongView) {
+//            ChooseSongView()}
         
     }.navigationBarBackButtonHidden(true)
     }
@@ -33,6 +35,6 @@ struct GameOver: View {
 
 struct GameOver_Previews: PreviewProvider {
     static var previews: some View {
-        GameOver()
+        GameOver(backToRoot: .constant(false))
     }
 }

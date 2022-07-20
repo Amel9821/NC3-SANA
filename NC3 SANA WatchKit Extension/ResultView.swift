@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ResultView: View {
+    
+    @Binding var backToRoot : Bool
     @State var showChooseSongView: Bool = false
     
     var body: some View {
@@ -21,19 +23,19 @@ struct ResultView: View {
         }
             .onAppear{
                 Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
-                    showChooseSongView.toggle()
+                    backToRoot = false
                     
                 }
                 
             }
-            .fullScreenCover(isPresented: $showChooseSongView) {
-                ChooseSongView()}
+//            .fullScreenCover(isPresented: $showChooseSongView) {
+//                ChooseSongView()}
         }.navigationBarBackButtonHidden(true)
     }
 }
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        ResultView(backToRoot: .constant(false))
     }
 }

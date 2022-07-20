@@ -10,6 +10,7 @@ import SwiftUI
 struct GameView: View {
     @State private var randomSelected : Int = 0
     @State var showResultView = false
+   // @State var latestRandomNumber: Int = 0
     
     // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     // @State private var counter = 0.0
@@ -59,7 +60,7 @@ struct GameView: View {
         .onAppear {
             print("appear")
             randomSelected = generateRandomNumber()
-            Timer.scheduledTimer(withTimeInterval: 0.9, repeats: true) { timer in
+            Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { timer in
                 randomSelected = generateRandomNumber()
             }
             Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in

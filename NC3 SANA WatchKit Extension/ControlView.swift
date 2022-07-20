@@ -41,7 +41,7 @@ struct ControlView: View {
                 Text( isPlaying ? "Pause" : "Resume")
             }
         }}.sheet(isPresented: $showGameOver) {
-            GameOver(showGameOver: $showGameOver)
+            GameOver()
             
         }
         

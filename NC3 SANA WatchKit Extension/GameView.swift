@@ -10,183 +10,72 @@ import SwiftUI
 struct GameView: View {
     @State private var randomSelected : Int = 0
     @State var showResultView = false
-   
-  // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-   // @State private var counter = 0.0
+    
+    // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    // @State private var counter = 0.0
     
     // setiap 0.3 detik button nyala berubah selama 30 detik => 100 kali random
     
     
     var body: some View {
-        //NavigationView {
-        
-        //        ZStack{
-        //        VStack {
-        //        ZStack{
-        //                    Circle()
-        //                        .fill(Color("Ungu"))
-        //                    Triangle()
-        //                        .fill(Color("UnguTua"))
-        //                        .frame(width: 30, height: 30)
-        //                }
-        //                .frame(width: 62, height: 62)
-        //                .opacity(1)
-        //        Spacer()
-        //        ZStack{
-        //                    Circle()
-        //                        .fill(Color("Ungu"))
-        //                    Triangle()
-        //                        .fill(Color("UnguTua"))
-        //                        .frame(width: 30, height: 30)
-        //                }
-        //                .frame(width: 62, height: 62)
-        //                .opacity(0.3)
-        //                .rotationEffect(.degrees(180))
-        //    }
-        //        HStack {
-        //            ZStack{
-        //                        Circle()
-        //                            .fill(Color("Ungu"))
-        //                        Triangle()
-        //                            .fill(Color("UnguTua"))
-        //                            .frame(width: 30, height: 30)
-        //                    }
-        //                    .frame(width: 62, height: 62)
-        //                    .opacity(0.3)
-        //                    .rotationEffect(.degrees(270))
-        //            Spacer()
-        //            ZStack{
-        //                        Circle()
-        //                            .fill(Color("Ungu"))
-        //                        Triangle()
-        //                            .fill(Color("UnguTua"))
-        //                            .frame(width: 30, height: 30)
-        //                    }
-        //                    .frame(width: 62, height: 62)
-        //                    .opacity(0.3)
-        //                    .rotationEffect(.degrees(90))
-        //
-        //
-        //        }
-        //    }
-        
-        
-        
         
         //1. Fungsi yang di eksekusi/jalankan setiap interval waktu tertentu, dispatch queue
         //2. Random visual effect (scale button)
         
         ZStack {
             VStack {
-//                upArrow
+                //                upArrow
                 TriangleButton(rotation: 0, buttonNumber: 1, selectedNumber: randomSelected)
-//                    .onTapGesture {
-//                        if randomSelected == 1 {
-//                            print("BENAAAR")
-//                            randomSelected = generateRandomNumber()
-//                        } else {
-//                            print("Salaah")
-//                            randomSelected = generateRandomNumber()
-//                        }
-//                    }
+                //                    .onTapGesture {
+                //                        if randomSelected == 1 {
+                //                            print("BENAAAR")
+                //                            randomSelected = generateRandomNumber()
+                //                        } else {
+                //                            print("Salaah")
+                //                            randomSelected = generateRandomNumber()
+                //                        }
+                //                    }
                 Spacer()
-//                downArrow
+                //                downArrow
                 TriangleButton(rotation: 180, buttonNumber: 2, selectedNumber: randomSelected)
             }
             HStack {
-//                leftArrow
+                //                leftArrow
                 TriangleButton(rotation: 270, buttonNumber: 3, selectedNumber: randomSelected)
                 Spacer()
-//                rightArrow
+                //                rightArrow
                 TriangleButton(rotation: 90, buttonNumber: 4, selectedNumber: randomSelected)
             }
         }
-//        .onReceive(timer) { time in
-//            //
-//            if counter.truncatingRemainder(dividingBy: 0.3) == 0.0 {
-//
-//                //randomSelected = generateRandomNumber()
-//            }
-//            print(counter.truncatingRemainder(dividingBy: 0.3))
-//            counter += 0.1
-//        }
+        //        .onReceive(timer) { time in
+        //            //
+        //            if counter.truncatingRemainder(dividingBy: 0.3) == 0.0 {
+        //
+        //                //randomSelected = generateRandomNumber()
+        //            }
+        //            print(counter.truncatingRemainder(dividingBy: 0.3))
+        //            counter += 0.1
+        //        }
         .onAppear {
             print("appear")
             randomSelected = generateRandomNumber()
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-//                print("Oy oy")
+            Timer.scheduledTimer(withTimeInterval: 0.9, repeats: true) { timer in
                 randomSelected = generateRandomNumber()
             }
-           // NavigationLink(
             Timer.scheduledTimer(withTimeInterval: 30, repeats: false) { timer in
-//                print("Oy oy")
                 showResultView.toggle()
                 
             }
         }
+        
         .sheet(isPresented: $showResultView) {
             ResultView()}
+        
         
     }
     
     func generateRandomNumber() -> Int {
         return Int.random(in: 1..<5)
-    }
-    
-    var upArrow: some View {
-        Button(action: {}){
-        ZStack{
-            Circle()
-                .fill(Color("Ungu"))
-            Triangle()
-                .fill(Color("UnguTua"))
-                .frame(width: 30, height: 30)
-        }
-        }.buttonStyle(PlainButtonStyle())
-        .frame(width: 62, height: 62)
-        .opacity(1)
-    }
-    var rightArrow: some View {
-        Button(action: {}){
-        ZStack{
-            Circle()
-                .fill(Color("Ungu"))
-            Triangle()
-                .fill(Color("UnguTua"))
-                .frame(width: 30, height: 30)
-        }
-        }.buttonStyle(PlainButtonStyle())
-        .frame(width: 62, height: 62)
-        .opacity(0.3)
-        .rotationEffect(.degrees(90))
-    }
-    var leftArrow: some View {
-        Button(action: {}){
-        ZStack{
-            Circle()
-                .fill(Color("Ungu"))
-            Triangle()
-                .fill(Color("UnguTua"))
-                .frame(width: 30, height: 30)
-        }
-        }.buttonStyle(PlainButtonStyle())
-        .frame(width: 62, height: 62)
-        .opacity(0.3)
-        .rotationEffect(.degrees(270))
-    }
-    var downArrow: some View {
-        Button(action: {}){
-        ZStack{
-            Circle()
-                .fill(Color("Ungu"))
-            Triangle()
-                .fill(Color("UnguTua"))
-                .frame(width: 30, height: 30)
-        }
-        }.buttonStyle(PlainButtonStyle())
-        .frame(width: 62, height: 62)
-        .opacity(0.3)
-        .rotationEffect(.degrees(180))
     }
     
     
@@ -219,7 +108,7 @@ struct TriangleButton : View {
             }
         }
         .sheet(isPresented: $showGameOver) {
-            GameOver(showGameOver: $showGameOver)}
+            GameOver()}
     }
 }
 

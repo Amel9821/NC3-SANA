@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ResultView: View {
+    @State var showChooseSongView: Bool = false
     
     var body: some View {
+        NavigationView{
             VStack{
             Image("Happy")
                 .resizable()
@@ -17,7 +19,17 @@ struct ResultView: View {
             Text("게임셋")
             Text("Congratulation")
         }
-        }    
+            .onAppear{
+                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+                    showChooseSongView.toggle()
+                    
+                }
+                
+            }
+            .fullScreenCover(isPresented: $showChooseSongView) {
+                ChooseSongView()}
+        }.navigationBarBackButtonHidden(true)
+    }
 }
 
 struct ResultView_Previews: PreviewProvider {

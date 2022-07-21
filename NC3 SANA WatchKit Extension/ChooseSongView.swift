@@ -19,7 +19,7 @@ struct ChooseSongView: View {
         VStack(alignment: .leading){
             Text("Choose your song")
             List{
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color("Ungu"))
@@ -36,12 +36,12 @@ struct ChooseSongView: View {
                         .offset(x: -45)
                     }
                         .onTapGesture {
-                            self.showSessionPageView = true
+                            showSessionPageView = true
                             AVService.shared.playMusic1()
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color("Ungu"))
@@ -63,7 +63,7 @@ struct ChooseSongView: View {
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color("Ungu"))
@@ -85,7 +85,7 @@ struct ChooseSongView: View {
                         }
                 }
                 )
-                NavigationLink(destination: SessionPageView(backToRoot: $backToRoot), isActive: self.$showSessionPageView, label: {
+                NavigationLink(destination: SessionPageView(backToRoot: $showSessionPageView), isActive: self.$showSessionPageView, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(Color("Ungu"))

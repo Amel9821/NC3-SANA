@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SessionPageView: View {
     @Binding var backToRoot: Bool
-    @State private var selection: Tab = .games
+    @State var selection: Tab = .games
     
     enum Tab {
         case controls, games
@@ -19,6 +19,10 @@ struct SessionPageView: View {
             ControlView(backToRoot: $backToRoot).tag(Tab.controls)
             GameView(backToRoot: $backToRoot).tag(Tab.games)
         }
+        .onAppear {
+            print(backToRoot,"session")
+        }
+        
         .tabViewStyle(.page)
     }
     

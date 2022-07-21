@@ -11,7 +11,6 @@ struct GameView: View {
     @Binding var backToRoot : Bool
     @State private var randomSelected : Int = 0
     @State var showResultView = false
-     @State var latestRandomNumber: Int = 0
     @Environment(\.presentationMode) var presentationMode
     // let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     // @State private var counter = 0.0
@@ -62,6 +61,10 @@ struct GameView: View {
             if !backToRoot{
                 presentationMode.wrappedValue.dismiss()
             }
+            // punya button yg kalo diklik bakal ngubah value jadi true (variable isPressed)
+            // ada timer jalan setiap x waktu bakal ngecek apakah si variable isPressed itu valuenya true?
+            // jika true maka okay tetep jalan randomnya atau next step
+            // jika false maka game over
             
             //print("appear")
             randomSelected = generateRandomNumber()
@@ -81,7 +84,17 @@ struct GameView: View {
     }
     
     func generateRandomNumber() -> Int {
-        return Int.random(in: 1..<5)
+        var result = 0;
+        
+        for _ in 0... {
+            result = Int.random(in: 1..<5)
+            
+            if result != randomSelected {
+                break
+            }
+        }
+        
+        return result
     }
     
     
